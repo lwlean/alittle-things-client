@@ -58,7 +58,7 @@ function addZero(num) {
 }
 
 function getUrl() {
-	const ip = config.localIp;
-	//const ip = config.yunIp; 
+	//const ip = config.localIp;
+	const ip = config.yunIp; 
 	return 'http://' + ip + ':' + config.port + '/' + config.domain + '/'; 
 }
