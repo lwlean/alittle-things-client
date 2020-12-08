@@ -1,0 +1,22 @@
+{
+  "name": "alittle-things-client",
+  "version": "1.0.0",
+  "description": "client for upload markdown file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "ups": "./upthings.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwlean/alittle-things-client.git"
+  },
+  "author": "lwlean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwlean/alittle-things-client/issues"
+  },
+  "homepage": "https://github.com/lwlean/alittle-things-client#readme"
+}
