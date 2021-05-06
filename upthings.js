@@ -9,8 +9,21 @@ const http = require('http');
  * author: llw
  * change: 更改为可以提交文件，也可以提交一个字符串, 增加便利性
  */
-(() =>{
+(() => {
+	const dic = {
+		'-v': () => {
+			console.log(`version:${require('./package.json').version}`);
+		},
+	}
 	const param = process.argv[2];	
+	if (param.indexOf('-') > -1) {
+		Object.keys(dic).forEach(key => {
+			if (key === param) {
+				(dic[key])();
+				return;
+			}
+		});
+	}
 	let content = fs.existsSync(param) ? fs.readFileSync(path.resolve(param)) : param;
 	uploadThings(content);
 })();
